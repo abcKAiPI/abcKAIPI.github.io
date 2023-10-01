@@ -13,16 +13,16 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="密码学：古典密码.古典密码是密码学的一个类型，大部分加密方式是利用替换式密码或移项式密码，有时是两者的混合。古典密码在历史上普遍被使用，但到现代已经渐渐不常用了。一般来说，一种古典密码体制包含一个字母表(如A~Z)，以及一个操作规则或一种操作设备。古典密码是一类简单的密码体系，到了现代密码时代几乎不可信赖.目录：密码学：古典密码. 古典密码：线性映射. （1）凯撒密码. （2）维吉尼亚密码 古典密">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog/source_posts/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/eea9d85715204cee864b43e0d5605173.png">
-<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog/source_posts/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/09ded203a4e5477094756e611d9317b1.png">
-<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog/source_posts/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/40a1733b851143e28e38fadb4493b9d4.png">
-<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog/source_posts/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/a601311a59434338adde9943bad7395e.png">
-<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog/source_posts/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/5e40bb0cc73349f79f1b30a9a7a082e7.png">
+<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/eea9d85715204cee864b43e0d5605173.png">
+<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/09ded203a4e5477094756e611d9317b1.png">
+<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/40a1733b851143e28e38fadb4493b9d4.png">
+<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/a601311a59434338adde9943bad7395e.png">
+<meta property="og:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/5e40bb0cc73349f79f1b30a9a7a082e7.png">
 <meta property="article:published_time" content="2023-10-01T06:00:04.000Z">
-<meta property="article:modified_time" content="2023-10-01T06:06:29.555Z">
+<meta property="article:modified_time" content="2023-10-01T06:12:39.070Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog/source_posts/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/eea9d85715204cee864b43e0d5605173.png">
+<meta name="twitter:image" content="http://example.com/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/eea9d85715204cee864b43e0d5605173.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -117,15 +117,15 @@
 <p>◆  Dn(x)&#x3D;(x-n) mod26<br>即使使用唯密文攻击，凯撒密码也是一种非常容易破解的加密方式。当我们知道(或者猜测》密文中使用了某个简单的替换加密方式，但是不确定是否为凯撒密码时，可以通过使用诸如频率分析或者样式单词分析的方法，就能从分析结果中看出规律，确定使用的是否为凯撒密码。<br>当我们知道(或者猜测)密文使用了凯撒密码，但是不知道其偏移量时，解决方法更简单。由于使用凯撒密码进行加密的字符一般是字母，因此密码中可能是使用的偏移量也是有限的。例如，使用26个字母的英语，它的偏移量最大是25(偏移量26等同于偏移量0，即没有变换)，因此通过穷举法可以轻易地进行破解。<br>（2）维吉尼亚密码<br>维吉尼亚密码 (Vigenere Cipher) 是使用一系列凯撒密码组成密码字母表的加密算法，属于多表密码的简单形式。在凯撒密码中，字母表中的每个字母都有一定的偏移，如偏移量为3时，A转换为了D，B转换为了E；而维吉尼亚密码由一些偏移量不同的凯撒密码组成。其加密的过程非常简单，假设明文为: ATTACKATDAWN，密钥为LEMON。首先，循环密钥形成密钥流，使之与明文长度相同：</p>
 <p>K&#x3D; key1 + key2 + key3 + …</p>
 <p>即 LEMONLEMONLE; 然后根据每位秘钥对原文加密，如第1位密钥是L，对应第12个字母，那么偏移量则为12-1&#x3D;11，对于第1位明文A，加密后的密文应为 (A+11) mod26，即L; 重复这个步骤就可以得到密文LXFOPVEFRNHR。<br>一般，破解维吉尼亚密码有一些固定的套路: 可以寻找密文中相同的连续字符串，则密钥长度一定为其间隔的因数，或者寻找 “ the ” “ lam ” 之类的特殊单词。当然，现在已经有现成的工具可以使用，遇到维吉尼亚密码可以直接使用在线工具求解：Vigenere<br>古典密码：固定替换<br>（1）培根密码<br>倍根密码(Bacon’s Cipher)是由法兰西斯·培根发明的一种隐写术，加密时，明文中的每个字母都会转换成一组5个英文字母.</p>
-<p><img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog\source_posts\国庆快乐\eea9d85715204cee864b43e0d5605173.png"></p>
+<p><img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/eea9d85715204cee864b43e0d5605173.png"></p>
 <p>（2）猪圈密码<br>猪圈密码(Pigpen Cipher) 是一种以格子为基础的简单替代式密码。猪圈密码的符号与个字母的密码配对.</p>
-<p>例如，若对明文<img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog\source_posts\国庆快乐\09ded203a4e5477094756e611d9317b1.png" alt="09ded203a4e5477094756e611d9317b1">“X marks the spot”进行加密.<br><img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog\source_posts\国庆快乐\40a1733b851143e28e38fadb4493b9d4.png"></p>
+<p>例如，若对明文<img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/09ded203a4e5477094756e611d9317b1.png" alt="09ded203a4e5477094756e611d9317b1">“X marks the spot”进行加密.<br><img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/40a1733b851143e28e38fadb4493b9d4.png"></p>
 <p>古典密码：移位密码<br>（1）栅栏密码<br>栅栏密码是把要加密的明文分成每 N 个一组，然后把每组的第 1 个字符连起来，形成一段无规律的字符串。在加密时，假设明文为“wearefamily”，密钥为 “ 4 ”，先用密钥 “ 4 ” 将明文每 4 个字符分为组“wear || efam || ily”，然后依次取出每组第1、2、3个字母，组为“wei || efl || aay || rm”，再连接起来就可以得到密文“weieflaayrm“</p>
 <p>（2）曲路密码<br>曲路密码的密钥其实是整个表格的列数和曲路路径，设明文为 “THISISATESTTEXT ”，先将文本填入矩阵</p>
-<p>.<img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog\source_posts\国庆快乐\a601311a59434338adde9943bad7395e.png"></p>
+<p>.<img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/a601311a59434338adde9943bad7395e.png"></p>
 <p>再按预先约定的路径，从表格中取出字符，即可得到密文：ISTXETTSTHISETA</p>
 <p>​     </p>
-<p>​      <img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/blog\source_posts\国庆快乐\5e40bb0cc73349f79f1b30a9a7a082e7.png" alt="5e40bb0cc73349f79f1b30a9a7a082e7"></p>
+<p>​      <img src="/2023/10/01/%E5%9B%BD%E5%BA%86%E5%BF%AB%E4%B9%90/5e40bb0cc73349f79f1b30a9a7a082e7.png" alt="5e40bb0cc73349f79f1b30a9a7a082e7"></p>
 
       
     </div>
